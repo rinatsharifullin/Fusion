@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+
+
+		<head>
+			<!--Done by Rinat Sharifullin, 2020-->
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Title for your webpage-->
+			<title>Fusion | Restaurant of Your Dream.</title>
+			<meta name="keywords" content="fusion, restaurant, menu, breakfast, dinner, lunch, price, contact">
+			<meta name="description" content="Fusion responsive page with flex, done by Rinat Sharifullin.">
+			<meta name="author" content="Rinat Sharifullin">
+			<link rel="shortcut icon" type="image/jpg" href="images/lunch_item.jpg">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+			<script src="https://kit.fontawesome.com/87e811ac08.js" crossorigin="anonymous"></script>
+			
+		</head>
+		
+		<!-- Start of Main flex container -->
+		<body>
+			<!-- Start flex head part of page with logo and navigation -->
+			<header>
+				<h1>Fusion</h1>
+				<p id="mobileIcon">&#8801;</p>
+				<!-- Start flex container for navigation -->
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="#">Our menu</a>
+					<a href="#">Blog entries</a>
+					<a href="#">Contact us</a>
+				</nav>
+				<!-- End flex container for navigation -->
+			</header>
+			<!-- End flex head part of page with logo and navigation -->	
+			
+			<!-- Start flex container for banner -->
+			<div id="banner">
+				<p>Here you can find delicious food</p>
+				<h1>Fusion Restaurant</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever si</p>
+				<button type="button">Order right now</button>
+			</div>
+			<!-- End flex container for banner -->
+			
+			<!-- Start menu flex container -->
+			<div id="menu">
+				<!-- Start top part of menu flex container -->
+				<div id="topMenu">
+					<img src="images/cook_01.jpg" alt="pears boiled" width="370" height="278">
+					<!-- Start flex container for ordering -->
+					<div id="delicious">
+						<h2>Delicious food</h2>
+						<!-- Start container for phone number -->
+						<div id="call">
+							<p>You can call us on:</p>
+							<p>+ 1234 567 8910</p>
+						</div>
+						<!-- End container for phone number -->
+						<!-- Start container for circle of OR -->
+						<div id="or">
+							<p>or</p>
+						</div>
+						<!-- End container for circle of OR -->
+						<button type="button">Order now</button>
+					</div>
+					<!-- End flex container for ordering -->
+					<img src="images/cook_02.jpg" alt="fast food" width="370" height="278">
+				</div>
+				<!-- End top part of menu flex container -->
+				
+				<!-- Start bottom part of menu flex container -->
+				<div id="bottomMenu">
+					<!-- Start flex containers for meal picture and text -->
+					<div>
+						<img src="images/cook_breakfast.png" alt="milk with fruits" width="180" height="180">
+						<p>Breakfast</p>
+					</div>
+					<div>
+						<img src="images/cook_lunch.png" alt="cook lunch" width="180" height="180">
+						<p>Breakfast</p>
+					</div>
+					<div>
+						<img src="images/cook_dinner.png" alt="cook dinner" width="180" height="180">
+						<p>Breakfast</p>
+					</div>
+					<div>
+						<img src="images/cook_dessert.png" alt="cook dessert" width="180" height="180">
+						<p>Breakfast</p>
+					</div>
+					<!-- Start flex container for meal picture and text -->
+				</div>
+				<!-- End bottom part of menu flex container -->
+			</div>
+			<!-- End menu flex container -->
+			
+			<!-- Start booking flex container -->
+			<div id="book">
+				<h2>Book your table now</h2>
+				<!-- Start flex form for image and reservation form -->
+				<div id="bookImg">
+					<img src="images/book_left_image.jpg" alt="dinning table" width="370" height="290">
+					<!-- Start flex container for reservation form -->
+					<div id="reservation">
+						<h3>Reservation</h3>
+						<form action="#" method="post">
+							<!-- It was initial approach
+							<input type="month" id="month" name="month" value="2020-03" required>
+							<input type="time" id="time" name="time" value="20:20" required> 
+							<input type="number" id="number" name="number" min="1" max="9" placeholder="How many persons?" required>-->
+							<select>
+							  <option value="">Select day</option>
+							  <option value="monday">Monday</option>
+							  <option value="tuesday">Tuesday</option>
+							  <option value="wednesday">Wednesday</option>
+							  <option value="thursday">Thursday</option>
+							  <option value="friday">Friday</option>
+							  <option value="saturday">Saturday</option>
+							  <option value="sunday">Sunday</option>
+							</select>
+							<select>
+							  <option value="">Select hours</option>
+							  <option value="1">13:00</option>
+							  <option value="2">14:00</option>
+							  <option value="3">15:00</option>
+							  <option value="4">16:00</option>
+							  <option value="5">17:00</option>
+							  <option value="6">18:00</option>
+							  <option value="7">19:00</option>
+							</select>
+							<input type="text" id="text" name="text" placeholder="Full name" required>
+							<input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+							<select>
+							  <option value="">How many persons?</option>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							  <option value="6">6</option>
+							  <option value="7">7</option>
+							</select>
+							<input type="submit" value="book table">
+						</form>
+					</div>
+					<!-- End flex container for reservation form -->
+				</div>
+				<!-- End flex form for image and reservation form -->
+			</div>
+			<!-- End booking flex container -->
+			
+			<!-- Start download app flex container -->
+			<div id="app">
+				<h2>Download app for your phone</h2>
+				<button type="button" >Download now</button>
+			</div>
+			<!-- End download app flex container -->
+			
+			<!-- Start flex container for featured menu -->
+			<div id="featured">
+				<h2>Weekly featured food</h2>
+				<!-- Start flex container for picture, text and price -->
+				<div id="food">
+					<!-- Start containers for description, price and images -->
+					<div class="food1">
+						<h3>Breakfast</h3>
+						<!-- Start container for image and price -->
+						<div class="image1">
+							<img src="images/breakfast_item.jpg" alt="spoon and bowl" width="310" height="180">
+							<!-- Start container for price -->
+							<div class="price1">
+								<p>$4.50</p>
+							</div>
+							<!-- End container for price -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start description container -->
+						<div class="description1">
+							<h4>Porrigde in a bowl</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever si</p>
+						</div>
+						<!-- End description container -->
+					</div>
+					
+					<div class="food1">
+						<h3>Lunch</h3>
+						<!-- Start container for image and price -->
+						<div class="image1">
+							<img src="images/lunch_item.jpg" alt="lunch meal" width="310" height="180">
+							<!-- Start container for price -->
+							<div class="price1">
+								<p>$7.50</p>
+							</div>
+							<!-- End container for price -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start description container -->
+						<div class="description1">
+							<h4>Beef Stir Fry</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever si</p>
+						</div>
+						<!-- End description container -->
+					</div>
+					
+					<div class="food1">
+						<h3>Dinner</h3>
+						<!-- Start container for image and price -->
+						<div class="image1">
+							<img src="images/dinner_item.jpg" alt="dinner meal" width="310" height="180">
+							<!-- Start container for price -->
+							<div class="price1">
+								<p>$12.50</p>
+							</div>
+							<!-- End container for price -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start description container -->
+						<div class="description1">
+							<h4>Squid Bean Salad</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever si</p>
+						</div>
+						<!-- End description container -->
+					</div>
+					<!-- End containers for description, price and images -->
+				</div>
+				<!-- End flex container for picture, text and price -->
+			</div>
+			<!-- End flex container for featured menu -->
+			
+			<!-- Start flex container for blogs -->
+			<div id="blog">
+				<h2>Our blog posts</h2>
+				<!-- Flex container for all blogs -->
+				<article>
+					<!-- Start blog flex containers -->
+					<div class="blog2">
+						<!-- Start container for image and price -->
+						<div class="image2">
+							<img src="images/blog_post_01.jpg" alt="dinning table" width="270" height="237">
+							<!-- Start container for date -->
+							<div class="date2">
+								<p>26 Feb 2020</p>
+							</div>
+							<!-- End container for date -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start container for text description -->
+						<div class="text1">
+							<h3>Stumptown Tofu Shlitz</h3>
+							<p>Branding / Admin</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+							<a href="#">Continue reading</a>
+						</div>
+						<!-- End container for text description -->
+					</div>
+					
+					<div class="blog2">
+						<!-- Start container for image and price -->
+						<div class="image2">
+							<img src="images/blog_post_02.jpg" alt="fortepiano" width="270" height="237">
+							<!-- Start container for date -->
+							<div class="date2">
+								<p>20 Oct 2019</p>
+							</div>
+							<!-- End container for date -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start container for text description -->
+						<div class="text1">
+							<h3>Succulents Hashtag Folk</h3>
+							<p>Branding / Admin</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+							<a href="#">Continue reading</a>
+						</div>
+						<!-- End container for text description -->
+					</div>
+					
+					<div class="blog2">
+						<!-- Start container for image and price -->
+						<div class="image2">
+							<img src="images/blog_post_03.jpg" alt="kernel" width="270" height="237">
+							<!-- Start container for date -->
+							<div class="date2">
+								<p>1 Oct 2019</p>
+							</div>
+							<!-- End container for date -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start container for text description -->
+						<div class="text1">
+							<h3>Knaus Sriracha Pinterest</h3>
+							<p>Branding / Admin</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+							<a href="#">Continue reading</a>
+						</div>
+						<!-- End container for text description -->
+					</div>
+					
+					<div class="blog2">
+						<!-- Start container for image and price -->
+						<div class="image2">
+							<img src="images/blog_post_04.jpg" alt="dishes" width="270" height="237">
+							<!-- Start container for date -->
+							<div class="date2">
+								<p>03 Sep 2019</p>
+							</div>
+							<!-- End container for date -->
+						</div>
+						<!-- End container for image and price -->
+						<!-- Start container for text description -->
+						<div class="text1">
+							<h3>Crusifix Selvage Coat</h3>
+							<p>Branding / Admin</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+							<a href="#">Continue reading</a>
+						</div>
+						<!-- End container for text description -->
+					</div>
+					<!-- End blog flex containers -->
+				</article>
+				<!-- End container for all blogs -->
+			</div>
+			<!-- End flex container for blogs -->
+			
+			<!-- Start flex container for newsletter sign up -->
+			<div id="newsletter">
+				<h2>Sign up for our newsletter</h2>
+				<!-- Start flex container for email and button -->
+				<form action="#" method="post" id="signForm">
+					<input type="email" id="email" name="email" placeholder="Enter your email here..." required>
+					<input type="submit" value="Send message">
+				</form>
+				<!-- End flex container for email and button -->
+			</div>
+			<!-- End flex container for newsletter sign up -->
+			
+			<!-- Start copyright flex form -->
+			<div id="copy">
+				<small>Copyright &copy; 2020 Company XYZ</small>
+				<!-- Start container for social icons -->
+				<div id="social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fas fa-rss"></i></a>
+					<a href="#"><i class="fab fa-dribbble"></i></a>
+				</div>
+				<!-- End container for social icons -->
+				<small>Designed by <span>Company Name</span></small>
+			</div>
+			<!-- End copyright flex form -->
+		
+		<!-- End of Main flex container -->	
+		</body>
+		
+</html>

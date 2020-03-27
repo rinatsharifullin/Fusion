@@ -1,0 +1,669 @@
+/* Dafaulting style of used elements */
+h1, h2, h3, h4, p, img, body, article, small, a, div, form, input, span, select{
+	margin:0;
+	padding:0;
+}
+
+/* Styling body */
+body{
+	font-family: 'Spectral', serif;
+	display:flex;
+	flex-flow:column;
+	font-size:20px;
+}
+
+/* Flex head part of page with logo and navigation */
+header{
+	background-color:rgb(234,240,255);
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+}
+header h1{
+	font-style: italic;
+	font-weight:200;
+	width:95%;
+	border-bottom:rgb(216,222,237) solid 1px;
+	text-align:center;
+}
+#mobileIcon{
+	font-size:2em;
+	color:white;
+	background-color:rgb(242,116,95);
+	width:45px;
+	height:35px;
+	text-align:center;
+	line-height:36px;
+	border-radius:5px;
+	cursor:pointer;
+	margin:2vmin;
+}
+/* Flex container for navigation */
+nav{
+	display:none; /* flex */
+	flex-flow:column;
+	text-align:center;
+	background-color:rgb(241,243,252);
+	width:100%;
+}
+nav a{
+	text-decoration:none;
+	border-bottom:rgb(216,222,237) solid 1px;
+	color:black;
+	padding:2vmin;
+	text-transform:uppercase;
+	font-size:0.6em;
+	transition:border-bottom ease 0.5s, color ease 0.1s;
+}
+nav a:hover, nav a:active{
+	color:rgb(242,116,95);
+	border-bottom:rgb(242,116,95) solid 1px;
+}
+
+/* Flex container for banner */
+#banner{
+	background:url(../images/banner-bg.jpg) no-repeat center;
+	background-size:cover;
+	color:white;
+	display:flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding: 35vw 0;
+}
+#banner p:first-of-type{
+	text-transform:uppercase;
+	font-size:0.7em;
+	font-weight:600;
+	padding:2vw;
+}
+#banner h1{
+	text-transform:uppercase;
+	font-size:2.2em;
+	font-weight:200;
+	line-height:40px;
+	padding:2vw;
+}
+#banner p:nth-of-type(2){
+	font-size:0.7em;
+	padding:2vw;
+	max-width:600px;
+}
+#banner button{
+	background-color:rgb(242,116,95);
+	border:none;
+	color:white;
+	padding:20px 30px;
+	text-transform:uppercase;
+	font-size:0.5em;
+	font-weight:600;
+	border-radius:3px;
+	cursor:pointer;
+	transition:box-shadow ease 0.5s;
+	margin:2vw;
+}
+#banner button:hover{
+	box-shadow:0 1px 6px 0 rgb(132,133,136);
+}
+
+/* Menu flex container */
+#menu, #topMenu, #bottomMenu{
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+}
+#topMenu{
+	width:90%;
+	max-width:1000px;
+	padding:15vw 0;
+}
+#topMenu img{
+	max-width:580px;
+	width:80%;
+	height:auto;
+}
+#delicious{
+	box-sizing:border-box;
+	background-color:rgb(242,116,95);
+	max-width:700px;
+	width:100%;
+	color:white;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:space-around;
+	padding:2%;
+}
+#delicious h2{
+	font-size:1em;
+	text-transform:uppercase;
+	padding:3% 0;
+}
+#call{
+	background-color:rgb(243,130,111);
+	width:80%;
+	text-align:center;
+}
+#call p:first-child{
+	font-size:0.55em;
+	text-transform:uppercase;
+	padding-top:3vw;
+}
+#call p:last-child{
+	font-size:0.9em;
+	font-weight:700;
+	letter-spacing: 0.1em; 
+	padding-bottom:3vw;
+}
+#or{
+	width:24px;
+	height:24px;
+	border:rgba(77,77,77,0.3) solid 0.5px;
+	text-align:center;
+	border-radius:12px;
+	margin:3% 0;
+}
+#or p{
+	line-height:23px;
+}
+#delicious button{
+	background-color:white;
+	border:none;
+	color:rgb(242,116,95);
+	padding:20px 30px;
+	text-transform:uppercase;
+	font-size:0.5em;
+	font-weight:600;
+	border-radius:3px;
+	cursor:pointer;
+	transition:box-shadow ease 0.5s;
+	margin:3% 0;
+}
+#delicious button:hover{
+	box-shadow:0 1px 6px 0 rgb(132,133,136);
+}
+
+#bottomMenu div{
+	padding:5vw;
+	text-align:center;
+}
+#bottomMenu div img{
+	border:10px solid rgb(241,243,252);
+	border-radius:50%;
+}
+
+/* Booking flex container */
+#book{
+	background:url(../images/book-bg.jpg) no-repeat center;
+	background-size:cover;
+	color:white;
+	display:flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding: 15vw 0;
+}
+#book h2{
+	font-size:1em;
+	text-transform:uppercase;
+	padding: 0 0 15vw 0;
+}
+#bookImg {
+	width:95%;
+	max-width:700px;
+	color:black;
+	background-color:white;
+}
+#bookImg img{
+	width:100%;
+	height:auto;
+}
+#reservation{
+	padding:2vw;
+}
+#reservation form{
+	display:flex;
+	flex-flow:column;
+	padding:2%;
+	
+}
+#reservation form input, #reservation form select{
+	border:none;
+	border-bottom:rgb(216,222,237) solid 1px;
+	padding:4% 0;
+	outline: none;
+}
+#reservation form input[type=submit]{
+	margin:4% 0 0 0;
+	background-color:rgb(242,116,95);
+	color:white;
+	text-transform:uppercase;
+	font-size:0.5em;
+	font-weight:600;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+/* Download app container */
+#app{
+	background-color:rgb(242,116,95);
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
+	padding:5vw 0;
+}
+#app h2{
+	font-size:1em;
+	padding:2vw 0;
+}
+#app button{
+	background-color:white;
+	border:none;
+	color:rgb(242,116,95);
+	padding:20px 30px;
+	text-transform:uppercase;
+	font-size:0.5em;
+	font-weight:600;
+	border-radius:3px;
+	cursor:pointer;
+	transition:box-shadow ease 0.5s;
+	margin:2vw 0;
+}
+#app button:hover{
+	box-shadow:0 1px 6px 0 rgb(132,133,136);
+}
+
+/* Flex container for featured menu */
+#featured{
+	color:black;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	padding:15vw 0;
+}
+
+#featured h2{
+	font-size:1em;
+	text-transform:uppercase;
+	padding:0 0 10vw 0;
+}
+#food{
+
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+
+}
+.food1{
+	box-sizing:border-box;
+	display:flex;
+	flex-flow:column;
+	width:95%;
+	background-color:rgb(234,240,255);
+	padding:3vw;
+}
+.food1 h3{
+	max-width:700px;
+	width:100%;
+	border-bottom:rgb(216,222,237) solid 1px;
+	margin-bottom:2vw;
+}
+.image1 {
+	position:relative;
+	line-height:0;
+}
+.image1 img{
+	max-width:700px;
+	width:100%;
+	height:auto;
+	background-color:white;
+}
+.price1{
+	position:absolute;
+	right:0;
+	bottom:0;
+	background-color:rgba(255,255,255,0.8);
+}
+.price1 p{
+	padding:4vw;
+	color:red;
+}
+.description1{
+	box-sizing:border-box;
+	background-color:white;
+	max-width:700px;
+	width:100%;
+	padding:2vw;
+}
+.description1 h4{
+	padding:1vw 0;
+}
+
+
+/* Flex container for blogs */
+#blog{
+	color:black;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	padding:3vw 0;
+	background-color:rgb(234,240,255);
+}
+article{
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+}
+#blog h2{
+	font-size:1em;
+	text-transform:uppercase;
+	padding:10vw 0;
+}
+.blog2{
+	box-sizing:border-box;
+	display:flex;
+	flex-flow:column;
+	width:95%;
+	background-color:rgb(234,240,255);
+	padding:3vw;
+}
+.image2 {
+	position:relative;
+	line-height:0;
+}
+.image2 img{
+	max-width:700px;
+	width:100%;
+	height:auto;
+	background-color:white;
+}
+.date2{
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:rgba(255,255,255,0.8);
+}
+.date2 p{
+	padding:4vw;
+	color:red;
+}
+.text1{
+	box-sizing:border-box;
+	background-color:white;
+	max-width:700px;
+	width:100%;
+	padding:2vw;
+}
+.text1 h3, .text1 p, .text1 a{
+	padding:1vw 0;
+}
+.text1 a{
+	font-size:0.8em;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:rgb(242,116,95);
+}
+.text1 a:hover, .text1 a:active{
+	color:black;
+}
+
+/* Flex container for newsletter sign up */
+#newsletter{
+	background:url(../images/signup-bg.jpg) no-repeat center;
+	background-size:cover;
+	color:white;
+	display:flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding: 15vw 0;
+}
+#newsletter h2{
+	font-size:1em;
+	text-transform:uppercase;
+	padding: 0 0 5vw 0;
+}
+
+#newsletter form{
+	display:flex;
+	flex-flow:column;
+	padding:2vw;
+	width:90%;
+	align-items:center;
+}
+#newsletter form input{
+	padding:2vw 2vw;
+	outline: none;
+	border:none;
+	border-radius:4px;
+	background-color:rgba(255,255,255,0.9);
+	width:100%;
+}
+#newsletter form input[type=submit]{
+	margin:4vw 0 0 0;
+	background-color:rgba(0,0,0,0);
+	color:white;
+	text-transform:uppercase;
+	font-weight:500;
+	border:white solid 1px;
+	width:auto;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+/* Copyright flex form */
+#copy{
+	background-color:rgb(54,62,80);
+	color:white;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	padding: 5vw 0;
+}
+#social{
+	display:flex;
+	align-items:center;
+	padding:2vw;
+}
+#social a i{
+	width:40px;
+	line-height:40px;
+}
+#social a{
+	border-radius:50%;
+	background-color:white;
+	text-align:center;
+	margin:10px;
+	color:black;
+}
+#social a:hover, #copy span{
+	color:rgb(242,116,95);
+}
+
+
+
+
+/* Styling tablet version */
+@media only screen and (min-width: 550px){
+	/* Flex head part of page with logo and navigation */
+	#mobileIcon{
+		display:none;
+	}
+	
+	/* Flex container for navigation */
+	nav{
+		display:flex; 
+		flex-flow:row;
+		justify-content:center;
+		background-color:rgb(234,240,255);
+		width:100%;
+	}
+	nav a:hover, nav a:active{
+		color:rgb(242,116,95);
+		border-bottom:none;
+	} 
+	
+	/* Flex container for banner */
+	#banner{
+		padding: 15vw 0;
+	}
+	
+	/* Menu flex container */
+	#bottomMenu{
+		flex-flow:row wrap;
+		justify-content:center;
+		
+	}
+	#bottomMenu div{
+		flex:0 39%;
+	}
+}
+
+
+/* Styling desktop version */
+@media only screen and (min-width: 990px){
+	/* Menu flex container */
+	#menu{
+		padding: 5vw 0;
+	}
+	#topMenu{
+		flex-flow:row nowrap;
+		justify-content:center;
+		width:100%;
+		padding: 5vw 0;
+	}
+	#topMenu img{
+		width:33%;
+	}
+	#bottomMenu{
+		flex-wrap:nowrap;
+	}
+	#bottomMenu div{
+		flex:1 auto;
+		padding:2vw;
+	}
+	/* Booking flex container */
+	#book{
+		padding: 5vw 0;
+	}
+	#book h2{
+		padding: 0 0 5vw 0;
+	}
+	#bookImg {
+		display:flex;
+		width:auto;
+		max-width: 800px;
+		background-color:initial;
+	}
+	#bookImg img{
+		flex:50%;
+		height:fit-content;
+	}
+	#reservation{
+		flex:50%;
+		background-color:white;
+	}
+	#reservation form{
+		flex-flow:row wrap;
+		justify-content:space-between;
+	}
+	#reservation form input, #reservation form select{
+		flex:0 45%;
+		padding:5% 0;
+	}
+
+	/* Flex container for featured menu */
+	#featured{
+		padding:10vw 0;
+	}
+	#featured h2{
+		padding:0 0 9vw 0;
+	}
+	#food{
+		flex-flow:row;
+		justify-content:space-around;
+		max-width:1200px;
+	}
+	.food1{
+		padding:2vw;
+		flex:0 31%;
+	}
+	.image1 {
+		position:relative;
+		line-height:0;
+	}
+	.price1 p{
+		padding:2vw;
+	}
+
+
+	/* Flex container for blogs */
+	#blog{
+		padding:8vw 0;
+	}
+	article{
+		flex-flow:row wrap;
+		justify-content:space-between;
+		align-items:flex-start;
+		max-width:1200px;
+	}
+	#blog h2{
+		padding:0 0 4vw 0;
+	}
+	.blog2{
+		flex-flow:row;
+		width:auto;
+		padding:1vw;
+		flex:50%;
+	}
+	.image2{
+		flex:50%;
+	}
+	.date2 p{
+		padding:2vw;
+	}
+	.text1{
+		padding:1vw;
+		flex:50%;
+	}
+	.text1 h3, .text1 p, .text1 a{
+		padding:1vw 0;
+	}
+
+	/* Flex container for newsletter sign up */
+	#newsletter{
+		padding: 5vw 0;
+	}
+	#newsletter h2{
+		padding: 0 0 2vw 0;
+	}
+	#newsletter form{
+		flex-flow:row;
+		padding:2vw;
+		width:50%;
+	}
+	#newsletter form input{
+		flex:60%;
+		padding:1vw 1vw;
+	}
+	#newsletter form input[type=submit]{
+		flex:20%;
+		margin:0 2vw;
+	}
+	
+	/* Copyright flex form */
+	#copy{
+		flex-flow:row;
+		justify-content:center;
+		padding: 3vw 0;
+	}
+	#social{
+		display:flex;
+		align-items:center;
+		padding:0 5vw;
+	}
+
+}
