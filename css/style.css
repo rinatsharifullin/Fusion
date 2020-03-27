@@ -1,0 +1,234 @@
+/* Dafaulting style of used elements */
+h1, h2, p, img, body{
+	margin:0;
+	padding:0;
+	
+}
+
+/* Styling body */
+body{
+	display:flex;
+	flex-flow:column;
+	font-size:20px;
+}
+
+/* Styling flex head part of page with dark background */
+header{
+	display:flex;
+	flex-flow:column;
+	background-color:black;
+	color:white;
+}
+/* Style mobile navigation */
+#mobileNav{
+	display:none; /* flex in visible state */
+	background-color:maroon;
+	position:absolute;
+	width:100%;
+	justify-content:space-between;
+	padding:3vmin;
+	box-sizing:border-box;
+}
+#mobileMenu{
+	display:flex;
+	flex-flow:column;
+	flex:1; /* For mobileNav container */
+	padding:0 10vmin;
+}
+#mobileMenu a{
+	text-decoration:none;
+}
+#mobileMenu a:link, #mobileMenu a:visited{
+	color:white;
+}
+#mobileMenu a:hover, #mobileMenu a:active {
+	color:DarkKhaki;
+}
+#xIcon{
+	font-size:3em;
+	cursor:pointer;
+}
+
+/* Style flex navigation */
+nav{
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+}
+#logo{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-right:3vmin;
+	width:100%;
+}
+#mobileIcon{
+	font-size:3em;
+	cursor:pointer;
+}
+#socialText{
+	padding:3vmin;
+}
+#socialText p{
+	display:none; /* Display for desktop version only */
+}
+#socialIcons{
+	
+}
+#desktopNav{
+	display:none;
+}
+#banner{
+	background-color:rgb(51,51,51);
+	color:rgb(194,204,204);
+	
+}
+#banner p{
+	padding:2vmin 0;
+	text-align:center;
+	font-size:1.2em;
+}
+#bannerImg{
+	background:url(../images/banner1.jpg) no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	border-top:2px solid rgb(194,204,204);
+	border-bottom:2px solid rgb(194,204,204);
+}
+
+/* Style flex container for all white background elements */
+main{
+	padding:5vmin;
+}
+#welcome{
+	padding-bottom:2vmin;
+}
+#welcome h1{
+	border-bottom: 1px black solid;
+	padding-bottom:2vmin;
+}
+#welcome p{
+	padding-top:2vmin;
+}
+#images{
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	padding:5vmin;
+}
+#images img{
+	border:1px solid black;
+	padding:2vmin;
+	margin:1vmin;
+	width:100%;
+	height:auto;
+}
+#heading p:nth-child(2){
+	padding:3vmin 0 0.5vmin 0;
+}
+#heading p:last-child{
+	padding:0.5vmin 0 3vmin 0;
+}
+
+/* Style container for aside content */
+aside{
+	padding-top:3vmin;
+}
+aside h2, aside p, aside img{
+	padding:1vmin 0;
+}
+aside h2{
+	color:maroon;
+}
+/* Style copyright container */
+footer{
+	color:white;
+	background-color:black;
+	text-align:center;
+	padding:3vmin;
+}
+
+/* Styling Tablet version */
+@media only screen and (min-width: 768px){
+	#bannerImg{
+		border-bottom:none;
+	}
+	#images{
+		flex-flow:row;
+		padding:0;
+	}
+	#images img:first-child{
+		margin-left:0;
+	}
+	#images img:last-child{
+		margin-right:0;
+	}
+	aside img{
+		float:left;
+		padding-right:2vmin;
+	}
+}
+
+/* Styling Desktop version */
+@media only screen and (min-width: 1366px){
+	#mobileIcon{
+		display:none;
+	}
+	#logo{
+		width:auto;
+	}
+	nav{
+		flex-flow:row;
+		justify-content:space-between;
+	}
+	#socialText p{
+		display:block;
+		padding:1vmin 0;
+	}
+	#desktopNav{
+		display:inline;
+		padding:3vmin;
+		background-color:rgb(51,51,51);
+	}
+	#desktopNav a{
+		text-decoration:none;
+		padding-right:3vmin;
+		text-transform:uppercase;
+	}
+	#desktopNav a:link, #desktopNav a:visited{
+		color:white;
+	}
+	#desktopNav a:hover, #desktopNav a:active {
+		color:DarkKhaki;
+	}
+	#bannerImg{
+		background-image:url(../images/banner4.jpg);
+	}
+	main{
+		display:flex;
+	}
+	article{
+		flex:4; /* for main container */
+		padding-right:2vmin;
+	}
+	aside{
+		flex:1; /* for main container */
+		padding:0 0 0 2vmin;
+	}
+	#images img{
+		padding:2vmin;
+		margin:2vmin;
+		width:30%;
+	}
+	#images{
+		justify-content:center;
+		padding:2vmin;
+	}
+	aside img{
+		float:none;
+		width:100%;
+		height:auto;
+		
+	}
+}
